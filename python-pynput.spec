@@ -17,6 +17,7 @@ BuildRequires:	python-evdev
 BuildRequires:	python-six
 BuildRequires:	python-twine
 BuildRequires:	python-jinja2
+BuildRequires:	python-nh3
 
 %description
 Monitor and control user input devices
