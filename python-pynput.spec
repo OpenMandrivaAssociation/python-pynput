@@ -15,6 +15,7 @@ BuildRequires:	python
 BuildRequires:	python-xlib
 BuildRequires:	python-evdev
 BuildRequires:	python-six
+BuildRequires:	python-twine
 
 %description
 Monitor and control user input devices
