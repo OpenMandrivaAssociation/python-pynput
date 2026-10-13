@@ -1,6 +1,6 @@
 Name:		python-pynput
 Version:	1.8.1
-Release:	3
+Release:	4
 Source0:	https://files.pythonhosted.org/packages/source/p/pynput/pynput-%{version}.tar.gz
 Source1:    %{name}-%{version}-eggs.tar.gz
 Summary:	Monitor and control user input devices
@@ -12,12 +12,11 @@ BuildArch:	noarch
 BuildSystem:	python
 
 BuildRequires:	python
-BuildRequires:	python-xlib
-BuildRequires:	python-evdev
-BuildRequires:	python-six
-BuildRequires:	python-twine
-BuildRequires:	python-jinja2
-BuildRequires:	python-nh3
+BuildRequires:	python%{pyver}dist(python-xlib)
+BuildRequires:	python%{pyver}dist(evdev)
+BuildRequires:	python%{pyver}dist(six)
+BuildRequires:	python%{pyver}dist(jinja2)
+BuildRequires:	python%{pyver}dist(nh3)
 
 %description
 Monitor and control user input devices
